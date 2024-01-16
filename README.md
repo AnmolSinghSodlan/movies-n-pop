@@ -2,6 +2,8 @@
 
 ## Live Link
 
+https://movies-n-pop.vercel.app/
+
 ## Overview
 
 Movies-N-Pop is your ultimate destination for exploring the latest in cinema! Discover new movies, check ratings, watch trailers, and explore curated top editor's picks.

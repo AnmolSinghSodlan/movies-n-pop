@@ -13,13 +13,14 @@ const HeroBanner = () => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const { url } = useSelector((state) => state.home);
-  const { data, loading } = useFetch("/movie/upcoming");
+  const { data, loading } = useFetch("/movie/popular");
 
   useEffect(() => {
     const bg =
-      url.backdrop +
+      "https://image.tmdb.org/t/p/original" +
       data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
     setBackground(bg);
+    console.log(bg);
   }, [data]);
 
   const searchQueryHandler = (event) => {
